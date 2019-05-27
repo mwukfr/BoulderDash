@@ -4,17 +4,22 @@ import contract.ControllerOrder;
 import contract.IController;
 import contract.IModel;
 import contract.IView;
+import java.awt.event.KeyEvent;    //Only need this if we use a KeyListener here!!!
+import java.awt.event.KeyListener; //Only need this if we use a KeyListener here!!!
+
 
 /**
  * The Class Controller.
+ * 
+ * @author mwukfr
  */
 public final class Controller implements IController {
 
 	/** The view. */
-	private IView		view;
+	private IView view;
 
 	/** The model. */
-	private IModel	model;
+	private IModel model;
 
 	/**
 	 * Instantiates a new controller.
@@ -30,7 +35,7 @@ public final class Controller implements IController {
 	}
 
 	/**
-     * Control.
+     * Control. Indicates the keys to use.
      */
 	/*
 	 * (non-Javadoc)
@@ -47,7 +52,8 @@ public final class Controller implements IController {
      * @param pview
      *            the new view
      */
-	private void setView(final IView pview) {
+	//changed from private to public
+	public void setView(final IView pview) {
 		this.view = pview;
 	}
 
@@ -57,7 +63,8 @@ public final class Controller implements IController {
 	 * @param model
 	 *          the new model
 	 */
-	private void setModel(final IModel model) {
+	//changed from private to public
+	public void setModel(final IModel model) {
 		this.model = model;
 	}
 
@@ -74,21 +81,56 @@ public final class Controller implements IController {
 	 */
 	public void orderPerform(final ControllerOrder controllerOrder) {
 		switch (controllerOrder) {
-			case English:
-				this.model.loadHelloWorld("GB");
+			case Level1:
+				//do stuff
 				break;
-			case Francais:
-				this.model.loadHelloWorld("FR");
+			case Level2:
+				//do stuff
 				break;
-			case Deutsch:
-				this.model.loadHelloWorld("DE");
+			case Level3:
+				//do stuff
 				break;
-			case Indonesia:
-				this.model.loadHelloWorld("ID");
+			case Level4:
+				//do stuff
+				break;
+			case Level5:
+				//do stuff
 				break;
 			default:
 				break;
 		}
 	}
+	
+	/**
+	 * Main game loop.
+	 */
+	// Remove void - changed from private to public
+	public void gameLoop() {
+		//TODO - while maybe
+
+	}
+	
+	/**
+	 * Defines what happens when the game is launched. Includes the gameLoop(), death message and game restart.
+	 */
+	// Remove void
+	public void playGame() {
+		this.gameLoop();
+		//Display a message when you die ?
+		//Restart game on death ?	
+	}
+
+	//@Override - set by default
+	public void Controller(IView view, IModel model) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	//@Override - set by default
+	public void KeyListener(KeyEvent keyEvent) {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 }
