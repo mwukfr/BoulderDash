@@ -2,60 +2,49 @@ package model;
 
 import java.sql.SQLException;
 import java.util.Observable;
-
 import contract.IModel;
 import entity.HelloWorld;
 
 /**
- * The Class BoulderDashModel.
+ * The BoulderDashModel Class.
  *
- * @author Antoine Merlingeas
+ * @author Antoine
  */
-public final class BoulderDashModel extends Observable implements IModel {
+public final class BoulderDashModel extends Observable {
 
 
 	/**
-	 * Constructor of the BoulderDashModel.
+	 * Constructor of BoulderDashModel.
 	 */
 	public BoulderDashModel() {
 	}
 
 	/**
-     * Method for the hit of the player.
+     * True or False - Tells us if a player gets killed.
      */
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see contract.IModel#getMessage()
-	 */
 	public boolean Hit() {
 		return true;
 	}
 
 	/**
-     * Create Map.
+     * Creates the maps.
      */
 	public void CreateMap() {
 		//switch case 10
-		}
+	}
 
 	/**
-     * Can set the Mobile object after they're moving.
+     * Set the mobile once it's moved.
      */
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see contract.IModel#getMessage(java.lang.String)
-	 */
-	//A réfléchir
-	public void setMobilesHavesMoved() {
+	//Maybe not here!
+	public void setMobilesHaveMoved() {
 
 	}
 	/**
-	 * Can count the diamond and open the exit.
+	 * Counts the amount of diamonds collected - opens the exit.
 	 */
-	//dans entity?
-	public void CounterDiamond() {
+	//Maybe not here!
+	public void DiamondCounter() {
 		
 	}
 
@@ -64,12 +53,7 @@ public final class BoulderDashModel extends Observable implements IModel {
      *
      * @return the observable
      */
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see contract.IModel#getObservable()
-	 */
-	//déjà là
+	//already here, are we using it?
 	public Observable getObservable() {
 		return this;
 	}

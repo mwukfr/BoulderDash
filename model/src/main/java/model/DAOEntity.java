@@ -2,8 +2,8 @@ package model;
 
 import java.sql.Connection;
 import java.sql.SQLException;
-
 import entity.Entity;
+import contract.*;
 
 /**
  * The Class DAOEntity.
