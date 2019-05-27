@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 /**
  * The Class ViewPanel.
  *
- * @author Jean-Aymeric Diet
+ * @author mwukfr
  */
 class ViewPanel extends JPanel implements Observer {
 
@@ -24,6 +24,7 @@ class ViewPanel extends JPanel implements Observer {
 	 * @param viewFrame
 	 *          the view frame
 	 */
+	//subject to change
 	public ViewPanel(final ViewFrame viewFrame) {
 		this.setViewFrame(viewFrame);
 		viewFrame.getModel().getObservable().addObserver(this);
@@ -34,6 +35,7 @@ class ViewPanel extends JPanel implements Observer {
 	 *
 	 * @return the view frame
 	 */
+	//subject to change
 	private ViewFrame getViewFrame() {
 		return this.viewFrame;
 	}
@@ -44,27 +46,23 @@ class ViewPanel extends JPanel implements Observer {
 	 * @param viewFrame
 	 *          the new view frame
 	 */
+	//subject to change
 	private void setViewFrame(final ViewFrame viewFrame) {
 		this.viewFrame = viewFrame;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see java.util.Observer#update(java.util.Observable, java.lang.Object)
-	 */
-	public void update(final Observable arg0, final Object arg1) {
+	//subject to change
+	public void update(Observable observable) {
 		this.repaint();
 	}
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see javax.swing.JComponent#paintComponent(java.awt.Graphics)
-	 */
-	@Override
+	//add shit here
 	protected void paintComponent(final Graphics graphics) {
-		graphics.clearRect(0, 0, this.getWidth(), this.getHeight());
-		graphics.drawString(this.getViewFrame().getModel().getHelloWorld().getMessage(), 10, 20);
+	}
+
+	//auto added subject to change
+	public void update(Observable o, Object arg) {
+		// TODO Auto-generated method stub
+		
 	}
 }

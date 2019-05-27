@@ -3,14 +3,12 @@ package model;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Observable;
-
 import contract.IModel;
-import entity.HelloWorld;
 
 /**
  * The Class Model.
  *
- * @author Antoine - mwukfr
+ * @author Antoine
  */
 public final class Model extends Observable implements IModel {
 

@@ -3,7 +3,6 @@ package model;
 import java.sql.SQLException;
 import java.util.Observable;
 import contract.IModel;
-import entity.HelloWorld;
 
 /**
  * The BoulderDashModel Class.
