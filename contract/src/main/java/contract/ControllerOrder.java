@@ -3,16 +3,18 @@ package contract;
 /**
  * The Enum ControllerOrder.
  *
- * @author Jean-Aymeric Diet
+ * @author mwukfr
  */
 public enum ControllerOrder {
 
-	/** The English. */
-	English,
-	/** The French. */
-	Francais,
-	/** The Deutch. */
-	Deutsch,
-	/** The Indonesia. */
-	Indonesia
+	/** First Level. */
+	Level1,
+	/** Second Level. */
+	Level2,
+	/** Third Level. */
+	Level3,
+	/** Fourth Level. */
+	Level4,
+	/** Fifth Level. */
+	Level5
 }

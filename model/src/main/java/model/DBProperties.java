@@ -3,6 +3,7 @@ package model;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
+import contract.*;
 
 /**
  * The Class DBProperties.
