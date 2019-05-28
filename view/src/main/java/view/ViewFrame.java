@@ -14,7 +14,7 @@ import contract.IModel;
 /**
  * The Class ViewFrame.
  *
- * @author Jean-Aymeric Diet
+ * @author mwukfr
  */
 class ViewFrame extends JFrame implements KeyListener {
 
@@ -24,7 +24,7 @@ class ViewFrame extends JFrame implements KeyListener {
 	/** The controller. */
 	private IController				controller;
 	/** The Constant serialVersionUID. */
-	private static final long	serialVersionUID	= -697358409737458175L;
+	//private static final long	serialVersionUID	= -697358409737458175L;
 
 	/**
 	 * Instantiates a new view frame.

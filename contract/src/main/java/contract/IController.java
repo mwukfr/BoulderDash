@@ -21,14 +21,9 @@ public interface IController {
 	 *
 	 * @param controllerOrder
 	 *          the controller order
+	 *          
 	 */
 	public void orderPerform(ControllerOrder controllerOrder);
-	
-	/**
-	 * Set interfaces.
-	 * @return 
-	 */
-	public void Controller (IView view, IModel model);
 
 	/**
 	 * Model interface method.
