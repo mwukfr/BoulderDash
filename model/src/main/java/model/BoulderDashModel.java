@@ -13,7 +13,7 @@ public final class BoulderDashModel extends Observable {
 
 
 	/**
-	 * Constructor of BoulderDashModel.
+	 * The Constructor for BoulderDashModel.
 	 */
 	public BoulderDashModel() {
 	}
