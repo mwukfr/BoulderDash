@@ -1,8 +1,10 @@
 package model;
 
-import java.sql.SQLException;
+//import java.sql.SQLException;
 import java.util.Observable;
-import contract.IModel;
+
+import entity.Player;
+//import contract.IModel;
 
 /**
  * The BoulderDashModel Class.
@@ -10,10 +12,12 @@ import contract.IModel;
  * @author Antoine
  */
 public final class BoulderDashModel extends Observable {
+	
+	Player player;
 
 
 	/**
-	 * The Constructor for BoulderDashModel.
+	 * Constructor of BoulderDashModel.
 	 */
 	public BoulderDashModel() {
 	}
@@ -21,16 +25,16 @@ public final class BoulderDashModel extends Observable {
 	/**
      * True or False - Tells us if a player gets killed.
      */
+	
 	public boolean Hit() {
+		if (Boulder [X.Y] = Player[X.Y]) 
+		{
 		return true;
+		}
+		
 	}
 
-	/**
-     * Creates the maps.
-     */
-	public void CreateMap() {
-		//switch case 10
-	}
+
 
 	/**
      * Set the mobile once it's moved.
@@ -43,10 +47,17 @@ public final class BoulderDashModel extends Observable {
 	 * Counts the amount of diamonds collected - opens the exit.
 	 */
 	//Maybe not here!
+	/*private int DiamondCounter = 8;
 	public void DiamondCounter() {
-		
-	}
-
+		if (Diamond[X.Y] = Player[X.Y]) {
+			DiamondCounter --;
+		}
+		if (DiamondCounter == 0) {
+			System.out.println("La sortie est ouverte");
+			
+		}
+	}*/
+	
 	/**
      * Gets the observable.
      *
@@ -55,5 +66,36 @@ public final class BoulderDashModel extends Observable {
 	//already here, are we using it?
 	public Observable getObservable() {
 		return this;
+	}//permet d'avoir les sprites vieux, après je dois t'avouer, que genre déjà on va essayer d'avoir un truc fonctionnel
+	
+	public void move() {
 	}
+	
+	/**
+	 * Move up.
+	 */
+	public void moveUP() {
+		Player[X.Y+1];
+	}
+	/**
+	 * Move down.
+	 */
+	public void moveDOWN() {
+		Player[X.Y-1];
+	}
+	
+	/**
+	 * Move left.
+	 */
+	public void moveLEFT() {
+		Player[X-1.Y];
+	}
+	
+	/**
+	 * Move right.
+	 */
+	public void moveRIGHT() {
+		Player[X+1.Y];
+	}
+	
 }

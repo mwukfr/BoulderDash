@@ -1,16 +1,18 @@
 package model;
 
 import java.sql.Connection;
-import java.sql.SQLException;
+//import java.sql.SQLException;
 import java.util.Observable;
-import contract.IModel;
+//import contract.IModel;
 
 /**
  * The Class Model.
  *
  * @author Antoine
  */
-public final class Model extends Observable implements IModel {
+public final class Model extends Observable 
+//import IModel
+{
 
 	/**
      * Gets the observable.
@@ -25,6 +27,7 @@ public final class Model extends Observable implements IModel {
 	 * Either open or not.
 	 */
 	//Maybe a switch case
+
 	public boolean open() {
 		return false;
 	}
@@ -169,7 +172,8 @@ public final class Model extends Observable implements IModel {
 	 * Set coordinate Y.
 	 * @return
 	 */
-	//was a void in class diagram - this right ?
+	//was a void in class diagram - this right 
+	
 	public double setY() {
 		return 0;
 	}
