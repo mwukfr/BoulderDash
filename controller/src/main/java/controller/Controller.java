@@ -34,6 +34,7 @@ public final class Controller implements IController {
 		this.setModel(model);
 	}
 
+
 	/**
      * Control. Indicates the keys to use.
      */
@@ -49,12 +50,12 @@ public final class Controller implements IController {
 	/**
      * Sets the view.
      *
-     * @param pview
+     * @param view
      *            the new view
      */
 	//changed from private to public
-	public void setView(final IView pview) {
-		this.view = pview;
+	public void setView(final IView view) {
+		this.view = view;
 	}
 
 	/**
@@ -121,16 +122,9 @@ public final class Controller implements IController {
 	}
 
 	//@Override - set by default
-	public void Controller(IView view, IModel model) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	//@Override - set by default
 	public void KeyListener(KeyEvent keyEvent) {
 		// TODO Auto-generated method stub
 		
 	}
-
 
 }
