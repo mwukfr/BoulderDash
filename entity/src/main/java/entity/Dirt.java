@@ -10,29 +10,27 @@ public class Dirt extends Static {
 	/**
 	 * Variable.
 	 */
-	private Dirt dirt;
+	protected static boolean isBreakable = true;
 	
 	/**
-	 * Getter of dirt.
-	 * @return
+	 * Variables.
 	 */
-	public Dirt getDirt() {
-		return dirt;
-	}
+	protected static boolean isMobile;
 	
 	/**
-	 * Setter of dirt.
-	 * @param dirt
+	 * Variables.
 	 */
-	public void setDirt(Dirt dirt) {
-		this.dirt = dirt;
-	}
+	protected static boolean isCollectable = true;
 	
 	/**
-	 * Constructor of Dirt.
+	 * Variable.
+	 */
+	protected static boolean isUnique;
+	
+	/**
+	 * Constructor.
 	 */
 	public Dirt() {
-		super();
-		this.setBreakable(true);
+		
 	}
 }

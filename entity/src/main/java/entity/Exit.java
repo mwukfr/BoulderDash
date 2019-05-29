@@ -8,32 +8,29 @@ package entity;
 public class Exit extends Static {
 
 	/**
+	 * Variables.
+	 */
+	protected static boolean isBreakable;
+	
+	/**
 	 * Variable.
 	 */
-	private Exit exit;
+	protected static boolean isMobile;
 	
 	/**
-	 * Getter of exit.
-	 * @return
+	 * Variable.
 	 */
-	public Exit getExit() {
-		return exit;
-	}
+	protected static boolean isCollectable;
 	
 	/**
-	 * Setter of exit.
-	 * @param exit
+	 * Variables.
 	 */
-	public void setExit(Exit exit) {
-		this.exit = exit;
-	}
+	protected static boolean isUnique = true;
 	
 	/**
-	 * Constructor of Exit.
+	 * Constructor.
 	 */
 	public Exit() {
-		super();
-		this.setBreakable(false);
+		
 	}
-	
 }

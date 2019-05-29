@@ -9,31 +9,29 @@ package entity;
 public class Diamond extends Mobile {
 	
 	/**
-	 * Variable.
+	 * Variables false by default.
 	 */
-	private Diamond diamond;
+	protected static boolean isBreakable;
 	
 	/**
-	 * Getter for diamond.
-	 * @return
+	 * Variables false by default.
 	 */
-	public Diamond getDiamond() {
-		return diamond;
-	}
+	protected static boolean isMobile = true;
 	
 	/**
-	 * Setter for diamond.
-	 * @param diamond
+	 * Variables false by default.
 	 */
-	public void setDiamond(Diamond diamond) {
-		this.diamond = diamond;
-	}
+	protected static boolean isCollectable = true;
 	
 	/**
-	 * Contructor of the Diamond class.
+	 * Variables false by default.
+	 */
+	protected static boolean isUnique;
+	
+	/**
+	 * Constructor.
 	 */
 	public Diamond() {
-
+		
 	}
-	
 }

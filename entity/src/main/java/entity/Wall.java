@@ -8,32 +8,29 @@ package entity;
 public class Wall extends Static {
 
 	/**
+	 * Variables false by default.
+	 */
+	protected static boolean isBreakable = true;
+	
+	/**
+	 * Variables false by default.
+	 */
+	protected static boolean isMobile;
+	
+	/**
+	 * Variables false by default.
+	 */
+	protected static boolean isCollectable;
+	
+	/**
 	 * Variable.
 	 */
-	private Wall wall;
+	protected static boolean isUnique;
 	
 	/**
-	 * Getter of wall.
-	 * @return
-	 */
-	public Wall getWall() {
-		return wall;
-	}
-	
-	/**
-	 * Setter of wall.
-	 * @param wall
-	 */
-	public void setWall(Wall wall) {
-		this.wall = wall;
-	}
-	
-	/**
-	 * Constructor of Wall.
+	 * Constructor.
 	 */
 	public Wall() {
-		super();
-		this.setBreakable(true);
+		
 	}
-	
 }

@@ -6,29 +6,13 @@ package entity;
  */
 public class Static extends Entity {
 
-	/** 
-	 * Variables.
+	/**
+	 * Variables isMobile is false for all subclass.
 	 */
-	private boolean breakable;
+	private boolean isMobile = false;
 	
 	/**
-	 * Getter of breakable.
-	 * @return
-	 */
-	public boolean getBreakable() {
-		return breakable;
-	}
-	
-	/**
-	 * Setter of breakable.
-	 * @param breakable
-	 */
-	public void setBreakable(boolean breakable) {
-		this.breakable = breakable;
-	}
-	
-	/**
-	 * Constructor of Static class.
+	 * Constructor.
 	 */
 	public Static() {
 		

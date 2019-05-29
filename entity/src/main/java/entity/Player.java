@@ -6,30 +6,28 @@ package entity;
  *
  */
 public class Player extends Mobile {
-
+	/**
+	 * Variable.
+	 */
+	protected static boolean isBreakable;
+	
+	/**
+	 * Variable.
+	 */
+	protected static boolean isMobile = true;
+	
+	/**
+	 * Variable.
+	 */
+	protected static boolean isCollectable;
+	
 	/**
 	 * Variables.
 	 */
-	public Player player;
+	protected static boolean isUnique = true;
 	
 	/**
-	 * Getter of player.
-	 * @return
-	 */
-	public Player getPlayer() {
-		return player;
-	}
-	
-	/**
-	 * Setter of player.
-	 * @param player
-	 */
-	public void setPlayer(Player player) {
-		this.player = player;
-	}
-	
-	/**
-	 * Constructor of the Player class.
+	 * Constructor.
 	 */
 	public Player() {
 		

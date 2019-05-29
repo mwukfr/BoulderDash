@@ -1,59 +1,62 @@
 package entity;
 
-/**
- * The abstract class Entity
- *
- * @author Sacha
- */
-public abstract class Entity {
-	///**
-	// * Variable.
-	// */
-	//private boolean destructable;
+public class Entity implements IEntity {
+
+	/**
+	 * Variables false by default.
+	 */
+	private boolean isBreakable = false;
 	
 	/**
-	 * Variable.
+	 * Variables false by default.
 	 */
-	private boolean mobileEntity;
+	private boolean isMobile;
 	
 	/**
-	 * 
-	 * Getter for mobileEntity.
+	 * Variables false by default.
 	 */
-	public boolean getMobileEntity() {
-		return mobileEntity;
+	private boolean isCollectable = false;
+	
+	/**
+	 * Variables false by default.
+
+	 */
+	private boolean isUnique = false;
+	
+	/**
+	 * Boolean method IsBreakable.
+	 */
+	public boolean IsBreakable(boolean isBreakable) {
+		return isBreakable;
 	}
 	
 	/**
-	 * Setter for mobileEntity.
-	 * @param mobileEntity
+	 * Boolean method IsMobile.
 	 */
-	public void setMobileEntity(boolean mobileEntity) {
-		this.mobileEntity = mobileEntity;
+	public boolean IsMobile(boolean isMobile) {
+		return isMobile;
 	}
 	
-	///**
-	// * Getter for destructable.
-	// * @return
-	// */
-	//public boolean getDestructable() {
-	//	return destructable;
-	//}
-	
-	///**
-	// * Setter for destructable.
-	// * @param destructable
-	// */
-	//public void setDestructable(boolean destructable) {
-	//	this.destructable = destructable;
-	//}
+	/**
+	 * Boolean method IsCollectable.
+	 */
+	public boolean IsCollectable(boolean isCollectable) {
+		return isCollectable;
+	}
 	
 	/**
-	 * Constructor of the Entity class.
+	 * Boolean method IsUnique.
+	 */
+	public boolean IsUnique(boolean isUnique) {
+		return isUnique;
+	}
+	
+	/**
+	 * Constructor.
 	 */
 	public Entity() {
 		
 	}
-	
-	
+
+
 }

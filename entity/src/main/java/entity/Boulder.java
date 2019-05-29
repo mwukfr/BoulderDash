@@ -11,26 +11,25 @@ public class Boulder extends Mobile {
 	/**
 	 * Variable.
 	 */
-	private Boulder boulder;
+	protected static boolean isBreakable;
 	
 	/**
-	 * Getter for boulder.
-	 * @return
+	 * Variable.
 	 */
-	public Boulder getBoulder() {
-		return boulder;
-	}
+	protected static boolean isMobile = true;
 	
 	/**
-	 * Setter for boulder.
-	 * @param boulder
+	 * Variable.
 	 */
-	public void setBoulder(Boulder boulder) {
-		this.boulder = boulder;
-	}
+	protected static boolean isCollectable;
 	
 	/**
-	 * Contructor of the Boulder class.
+	 * Variable.
+	 */
+	protected static boolean isUnique;
+	
+	/**
+	 * Constructor.
 	 */
 	public Boulder() {
 		

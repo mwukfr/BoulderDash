@@ -7,19 +7,15 @@ package entity;
  * 
  */
 public class Mobile extends Entity {
-	
+	/**
+	 * Variables isMobile is true for all subclass.
+	 */
+	protected boolean isMobile = true;
 	
 	/**
-	 * The contructor of the Mobile class.
+	 * Constructor.
 	 */
 	public Mobile() {
-		/**
-		 * The objects of this class are mobile
-		 */
-		super();
-		setMobileEntity(true);
+		
 	}
-	
-
-	
 }

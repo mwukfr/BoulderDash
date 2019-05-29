@@ -10,30 +10,27 @@ public class LimitBlock extends Static {
 	/**
 	 * Variable.
 	 */
-	private LimitBlock limitBlock;
+	protected static boolean isBreakable;
 	
 	/**
-	 * Getter of limitBlock.
-	 * @return
+	 * Variable.
 	 */
-	public LimitBlock getLimitBlock() {
-		return limitBlock;
-	}
+	protected static boolean isMobile;
 	
 	/**
-	 * Setter of limitBlock.
-	 * @param limitBlock
+	 * Variable.
 	 */
-	public void setLimitBlock(LimitBlock limitBlock) {
-		this.limitBlock = limitBlock;
-	}
+	protected static boolean isCollectable;
 	
 	/**
-	 * Constructor of LimitBlock.
+	 * Variable.
+	 */
+	protected static boolean isUnique;
+	
+	/**
+	 * Constructor.
 	 */
 	public LimitBlock() {
-		super();
-		this.setBreakable(false);
+		
 	}
-	
 }
