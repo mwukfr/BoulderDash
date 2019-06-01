@@ -9,6 +9,16 @@ package entity;
 public class Boulder extends Mobile {
 
 	/**
+	 * Constructor.
+	 * @param x
+	 * @param y
+	 */
+	public Boulder(Integer x, Integer y) {
+		super(x, y);
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
 	 * Variable.
 	 */
 	protected static boolean isBreakable;
@@ -31,8 +41,5 @@ public class Boulder extends Mobile {
 	/**
 	 * Constructor.
 	 */
-	public Boulder() {
-		
-	}
 	
 }
