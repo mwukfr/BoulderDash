@@ -75,27 +75,27 @@ public final class BoulderDashModel extends Observable {
 	 * Move up.
 	 */
 	public void moveUP() {
-		Player[X.Y+1];
+		player[X.Y+1];
 	}
 	/**
 	 * Move down.
 	 */
 	public void moveDOWN() {
-		Player[X.Y-1];
+		player[X.Y-1];
 	}
 	
 	/**
 	 * Move left.
 	 */
 	public void moveLEFT() {
-		Player[X-1.Y];
+		player[X-1.Y];
 	}
 	
 	/**
 	 * Move right.
 	 */
 	public void moveRIGHT() {
-		Player[X+1.Y];
+		player[X+1.Y];
 	}
 	
 }
