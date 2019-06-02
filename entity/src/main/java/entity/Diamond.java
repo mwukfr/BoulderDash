@@ -7,6 +7,10 @@ package entity;
  *
  */
 public class Diamond extends Mobile {
+	public Diamond(Integer x, Integer y) {
+		super(x, y);
+		// TODO Auto-generated constructor stub
+	}
 	
 	/**
 	 * Variables false by default.
@@ -31,7 +35,5 @@ public class Diamond extends Mobile {
 	/**
 	 * Constructor.
 	 */
-	public Diamond() {
-		
-	}
+
 }
