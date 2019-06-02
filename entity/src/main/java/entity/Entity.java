@@ -1,6 +1,6 @@
 package entity;
 
-public class Entity implements IEntity {
+public class Entity {
 
 	/**
 	 * Variables false by default.
