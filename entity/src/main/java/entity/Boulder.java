@@ -16,7 +16,7 @@ public class Boulder extends Mobile {
 	/**
 	 * Variable.
 	 */
-	private static Image boulderPicture;
+	private Image boulderPicture;
 	/**
 	 * Constructor.
 	 * @param x
@@ -50,15 +50,15 @@ public class Boulder extends Mobile {
 	/**
 	 * @return the boulderPicture
 	 */
-	public static Image getBoulderPicture() {
+	public Image getBoulderPicture() {
 		return boulderPicture;
 	}
 
 	/**
 	 * @param boulderPicture the boulderPicture to set
 	 */
-	public static void setBoulderPicture(Image boulderPicture) {
-		Boulder.boulderPicture = boulderPicture;
+	public void setBoulderPicture(Image boulderPicture) {
+		this.boulderPicture = boulderPicture;
 	}
 	
 	/**

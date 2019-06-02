@@ -13,7 +13,7 @@ import javax.imageio.ImageIO;
  */
 public class Dirt extends Static {
 
-	private static Image dirtPicture;
+	private Image dirtPicture;
 	
 	/**
 	 * Variable.
@@ -45,15 +45,15 @@ public class Dirt extends Static {
 	/**
 	 * @return the dirtPicture
 	 */
-	public static Image getDirtPicture() {
+	public Image getDirtPicture() {
 		return dirtPicture;
 	}
 
 	/**
 	 * @param dirtPicture the dirtPicture to set
 	 */
-	public static void setDirtPicture(Image dirtPicture) {
-		Dirt.dirtPicture = dirtPicture;
+	public void setDirtPicture(Image dirtPicture) {
+		this.dirtPicture = dirtPicture;
 	}
 	
 	/**

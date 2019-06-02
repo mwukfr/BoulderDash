@@ -16,7 +16,7 @@ public class LimitBlock extends Static {
 	/**
 	 * Variable.
 	 */
-	private static Image limitBlockPicture;
+	private Image limitBlockPicture;
 
 	/**
 	 * Variable.
@@ -44,20 +44,6 @@ public class LimitBlock extends Static {
 	public LimitBlock() {
 		
 	}
-
-	/**
-	 * @return the limitBlockPicture
-	 */
-	public static Image getLimitBlockPicture() {
-		return limitBlockPicture;
-	}
-
-	/**
-	 * @param limitBlockPicture the limitBlockPicture to set
-	 */
-	public static void setLimitBlockPicture(Image limitBlockPicture) {
-		LimitBlock.limitBlockPicture = limitBlockPicture;
-	}
 	
 	/**
 	 * Method.
@@ -69,5 +55,19 @@ public class LimitBlock extends Static {
         catch(IOException exc) {
             exc.printStackTrace();
         }
+	}
+
+	/**
+	 * @return the limitBlockPicture
+	 */
+	public Image getLimitBlockPicture() {
+		return limitBlockPicture;
+	}
+
+	/**
+	 * @param limitBlockPicture the limitBlockPicture to set
+	 */
+	public void setLimitBlockPicture(Image limitBlockPicture) {
+		this.limitBlockPicture = limitBlockPicture;
 	}
 }

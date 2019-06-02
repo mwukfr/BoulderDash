@@ -18,22 +18,22 @@ public class Player extends Mobile {
 	/**
 	 * Variable.
 	 */
-	private static Image up;
+	private Image up;
 	
 	/**
 	 * Variable.
 	 */
-	private static Image down;
+	private Image down;
 	
 	/**
 	 * Variable.
 	 */
-	private static Image left;
+	private Image left;
 	
 	/**
 	 * Variable.
 	 */
-	private static Image right;
+	private Image right;
 	
 	/**
 	 * Variables.
@@ -115,57 +115,57 @@ public class Player extends Mobile {
 	/**
 	 * @return the left
 	 */
-	public static Image getLeft() {
+	public Image getLeft() {
 		return left;
 	}
 
 	/**
 	 * @param left the left to set
 	 */
-	public static void setLeft(Image left) {
-		Player.left = left;
+	public void setLeft(Image left) {
+		this.left = left;
 	}
 
 	/**
 	 * @return the right
 	 */
-	public static Image getRight() {
+	public Image getRight() {
 		return right;
 	}
 
 	/**
 	 * @param right the right to set
 	 */
-	public static void setRight(Image right) {
-		Player.right = right;
+	public void setRight(Image right) {
+		this.right = right;
 	}
 
 	/**
 	 * @return the down
 	 */
-	public static Image getDown() {
+	public Image getDown() {
 		return down;
 	}
 
 	/**
 	 * @param down the down to set
 	 */
-	public static void setDown(Image down) {
-		Player.down = down;
+	public void setDown(Image down) {
+		this.down = down;
 	}
 
 	/**
 	 * @return the up
 	 */
-	public static Image getUp() {
+	public Image getUp() {
 		return up;
 	}
 
 	/**
 	 * @param up the up to set
 	 */
-	public static void setUp(Image up) {
-		Player.up = up;
+	public void setUp(Image up) {
+		this.up = up;
 	}
 	
 	

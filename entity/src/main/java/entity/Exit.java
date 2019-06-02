@@ -16,7 +16,7 @@ public class Exit extends Static {
 	/**
 	 * Variable.
 	 */
-	private static Image exitPicture;
+	private Image exitPicture;
 	
 	/**
 	 * Variables.
@@ -48,15 +48,15 @@ public class Exit extends Static {
 	/**
 	 * @return the exitPicture
 	 */
-	public static Image getExitPicture() {
+	public Image getExitPicture() {
 		return exitPicture;
 	}
 
 	/**
 	 * @param exitPicture the exitPicture to set
 	 */
-	public static void setExitPicture(Image exitPicture) {
-		Exit.exitPicture = exitPicture;
+	public  void setExitPicture(Image exitPicture) {
+		this.exitPicture = exitPicture;
 	}
 	
 	/**

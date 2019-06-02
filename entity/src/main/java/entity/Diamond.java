@@ -17,7 +17,7 @@ public class Diamond extends Mobile {
 	/**
 	 * Variable.
 	 */
-	private static Image diamondPicture;
+	private Image diamondPicture;
 	
 	/**
 	 * Constructor.
@@ -52,15 +52,15 @@ public class Diamond extends Mobile {
 	/**
 	 * @return the diamondPicture
 	 */
-	public static Image getDiamondPicture() {
+	public Image getDiamondPicture() {
 		return diamondPicture;
 	}
 
 	/**
 	 * @param diamondPicture the diamondPicture to set
 	 */
-	public static void setDiamondPicture(Image diamondPicture) {
-		Diamond.diamondPicture = diamondPicture;
+	public void setDiamondPicture(Image diamondPicture) {
+		this.diamondPicture = diamondPicture;
 	}
 	
 	/**
