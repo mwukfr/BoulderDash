@@ -1,5 +1,11 @@
 package entity;
 
+import java.awt.Image;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
 /**
  * Dirt class inherits of Static.
  * @author Sacha
@@ -7,6 +13,8 @@ package entity;
  */
 public class Dirt extends Static {
 
+	private static Image dirtPicture;
+	
 	/**
 	 * Variable.
 	 */
@@ -32,5 +40,31 @@ public class Dirt extends Static {
 	 */
 	public Dirt() {
 		
+	}
+
+	/**
+	 * @return the dirtPicture
+	 */
+	public static Image getDirtPicture() {
+		return dirtPicture;
+	}
+
+	/**
+	 * @param dirtPicture the dirtPicture to set
+	 */
+	public static void setDirtPicture(Image dirtPicture) {
+		Dirt.dirtPicture = dirtPicture;
+	}
+	
+	/**
+	 * Method.
+	 */
+	public void DirtPicture() {
+        try {
+            setDirtPicture(ImageIO.read(new File("Dirt.png")));
+        }
+        catch(IOException exc) {
+            exc.printStackTrace();
+        }
 	}
 }

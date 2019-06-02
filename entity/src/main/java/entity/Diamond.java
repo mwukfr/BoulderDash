@@ -1,5 +1,11 @@
 package entity;
 
+import java.awt.Image;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
 /**
  * Diamond class inherits of Mobile.
  * 
@@ -7,6 +13,17 @@ package entity;
  *
  */
 public class Diamond extends Mobile {
+	
+	/**
+	 * Variable.
+	 */
+	private static Image diamondPicture;
+	
+	/**
+	 * Constructor.
+	 * @param x
+	 * @param y
+	 */
 	public Diamond(Integer x, Integer y) {
 		super(x, y);
 		// TODO Auto-generated constructor stub
@@ -33,7 +50,31 @@ public class Diamond extends Mobile {
 	protected static boolean isUnique;
 	
 	/**
-	 * Constructor.
+	 * @return the diamondPicture
 	 */
+	public static Image getDiamondPicture() {
+		return diamondPicture;
+	}
+
+	/**
+	 * @param diamondPicture the diamondPicture to set
+	 */
+	public static void setDiamondPicture(Image diamondPicture) {
+		Diamond.diamondPicture = diamondPicture;
+	}
+	
+	/**
+	 * Method.
+	 */
+	public void DiamondPicture() {
+        try {
+            setDiamondPicture(ImageIO.read(new File("Diamond.png")));
+        }
+        catch(IOException exc) {
+            exc.printStackTrace();
+        }
+	}
+
+
 
 }

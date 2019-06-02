@@ -10,7 +10,7 @@ public class Mobile extends Entity {
 	/**
 	 * Variable.
 	 */
-	protected Integer y;
+	private Integer y;
 	
 	/**
 	 * Variable.

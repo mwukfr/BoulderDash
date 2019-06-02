@@ -1,5 +1,10 @@
 package entity;
 
+
+import java.awt.Image;
+import java.io.*;
+import javax.imageio.ImageIO;
+
 /**
  * Boulder class inherits of Mobile.
  * 
@@ -8,6 +13,10 @@ package entity;
  */
 public class Boulder extends Mobile {
 
+	/**
+	 * Variable.
+	 */
+	private static Image boulderPicture;
 	/**
 	 * Constructor.
 	 * @param x
@@ -39,7 +48,29 @@ public class Boulder extends Mobile {
 	protected static boolean isUnique;
 	
 	/**
-	 * Constructor.
+	 * @return the boulderPicture
 	 */
+	public static Image getBoulderPicture() {
+		return boulderPicture;
+	}
+
+	/**
+	 * @param boulderPicture the boulderPicture to set
+	 */
+	public static void setBoulderPicture(Image boulderPicture) {
+		Boulder.boulderPicture = boulderPicture;
+	}
+	
+	/**
+	 * Method.
+	 */
+	public void BoulderPicture() {
+        try {
+            setBoulderPicture(ImageIO.read(new File("Boulder.png")));
+        }
+        catch(IOException exc) {
+            exc.printStackTrace();
+        }
+	}
 	
 }
