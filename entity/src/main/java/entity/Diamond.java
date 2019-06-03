@@ -66,13 +66,14 @@ public class Diamond extends Mobile {
 	/**
 	 * Method.
 	 */
-	public void DiamondPicture() {
+	public Image DiamondPicture() {
         try {
             setDiamondPicture(ImageIO.read(new File("Diamond.png")));
         }
         catch(IOException exc) {
             exc.printStackTrace();
         }
+		return diamondPicture;
 	}
 
 

@@ -60,12 +60,13 @@ public class Wall extends Static {
 	/**
 	 * Method.
 	 */
-	public void WallPicture() {
+	public Image WallPicture() {
         try {
             setWallPicture(ImageIO.read(new File("Wall.png")));
         }
         catch(IOException exc) {
             exc.printStackTrace();
         }
+		return wallPicture;
 	}
 }

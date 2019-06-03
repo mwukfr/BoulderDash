@@ -48,13 +48,14 @@ public class LimitBlock extends Static {
 	/**
 	 * Method.
 	 */
-	public void BoulderPicture() {
+	public Image LimitBlockPicture() {
         try {
             setLimitBlockPicture(ImageIO.read(new File("LimitBlock.png")));
         }
         catch(IOException exc) {
             exc.printStackTrace();
         }
+		return limitBlockPicture;
 	}
 
 	/**

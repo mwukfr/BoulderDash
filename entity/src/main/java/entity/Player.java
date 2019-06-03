@@ -172,50 +172,54 @@ public class Player extends Mobile {
 	/**
 	 * Method.
 	 */
-	public void Left() {
+	public Image Left() {
 		try {
 			setLeft(ImageIO.read(new File("Left.png")));
 		}
 		catch(IOException exc) {
 			exc.printStackTrace();
 		}
+		return left;
 	}
 
 	/**
 	 * Method.
 	 */
-	public void Right() {
+	public Image Right() {
 		try {
 			setRight(ImageIO.read(new File("right.png")));
 		}
 		catch(IOException exc) {
 			exc.printStackTrace();
 		}
+		return right;
 	}
 	
 	
 	/**
 	 * Method.
 	 */
-	public void Up() {
+	public Image Up() {
         try {
             setUp(ImageIO.read(new File("Up.png")));
         }
         catch(IOException exc) {
             exc.printStackTrace();
         }
+		return up;
 	}
 	
 	/**
 	 * Method.
 	 */
-	public void Down() {
+	public Image Down() {
         try {
             setDown(ImageIO.read(new File("Down.png")));
         }
         catch(IOException exc) {
             exc.printStackTrace();
         }
+		return down;
 	}
 
 }

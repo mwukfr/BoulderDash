@@ -64,13 +64,14 @@ public class Boulder extends Mobile {
 	/**
 	 * Method.
 	 */
-	public void BoulderPicture() {
+	public Image BoulderPicture() {
         try {
             setBoulderPicture(ImageIO.read(new File("Boulder.png")));
         }
         catch(IOException exc) {
             exc.printStackTrace();
         }
+		return boulderPicture;
 	}
 	
 }

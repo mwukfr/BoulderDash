@@ -59,12 +59,13 @@ public class Dirt extends Static {
 	/**
 	 * Method.
 	 */
-	public void DirtPicture() {
+	public Image DirtPicture() {
         try {
             setDirtPicture(ImageIO.read(new File("Dirt.png")));
         }
         catch(IOException exc) {
             exc.printStackTrace();
         }
+		return dirtPicture;
 	}
 }

@@ -62,12 +62,13 @@ public class Exit extends Static {
 	/**
 	 * Method.
 	 */
-	public void ExitPicture() {
+	public Image ExitPicture() {
         try {
             setExitPicture(ImageIO.read(new File("Exit.png")));
         }
         catch(IOException exc) {
             exc.printStackTrace();
         }
+		return exitPicture;
 	}
 }
