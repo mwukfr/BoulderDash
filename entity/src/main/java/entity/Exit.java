@@ -69,6 +69,6 @@ public class Exit extends Static {
         catch(IOException exc) {
             exc.printStackTrace();
         }
-		return exitPicture;
+		return this.exitPicture;
 	}
 }

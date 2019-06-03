@@ -73,7 +73,7 @@ public class Diamond extends Mobile {
         catch(IOException exc) {
             exc.printStackTrace();
         }
-		return diamondPicture;
+		return this.diamondPicture;
 	}
 
 
