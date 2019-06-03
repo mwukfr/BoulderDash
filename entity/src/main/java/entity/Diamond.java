@@ -64,7 +64,7 @@ public class Diamond extends Mobile {
 	}
 	
 	/**
-	 * Method.
+	 * Method to associate a picture to diamond.
 	 */
 	public Image DiamondPicture() {
         try {

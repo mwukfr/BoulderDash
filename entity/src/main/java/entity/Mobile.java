@@ -17,8 +17,6 @@ public class Mobile extends Entity {
 	 */
 	private Integer x;
 	
-	//private int coordinate[][] = { {getX()},{getY()} };
-	
 	/**
 	 * Variables isMobile is true for all subclass.
 	 */
@@ -59,19 +57,5 @@ public class Mobile extends Entity {
 	public void setX(Integer x) {
 		this.x = x;
 	}
-	
-	//public int coordinate(Integer x, Integer y) {
-	//	return x + y;
-		
-	//}
-	
-	//public int[][] getCoordinate() {
-	//	return coordinate;
-	//}
-	
-	//public void setCoordinate(int[][] coordinate) {
-	//	this.coordinate = coordinate;
-	//}
-	
 	
 }

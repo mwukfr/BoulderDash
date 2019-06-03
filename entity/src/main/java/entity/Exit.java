@@ -60,7 +60,7 @@ public class Exit extends Static {
 	}
 	
 	/**
-	 * Method.
+	 * Method to associate a picture to Exit.
 	 */
 	public Image ExitPicture() {
         try {

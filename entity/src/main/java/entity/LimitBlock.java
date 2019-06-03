@@ -46,7 +46,7 @@ public class LimitBlock extends Static {
 	}
 	
 	/**
-	 * Method.
+	 * Method to associate a picture to LimitBlock.
 	 */
 	public Image LimitBlockPicture() {
         try {

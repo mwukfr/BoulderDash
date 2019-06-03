@@ -10,10 +10,6 @@ import javax.imageio.ImageIO;
  *
  */
 public class Player extends Mobile {
-	/**
-	 * Variable.
-	 */
-	private int countDiamond;
 	
 	/**
 	 * Variable.
@@ -70,34 +66,13 @@ public class Player extends Mobile {
 	}
 	
 	/**
-	 * Method for Diamond counter.
-	 */
-	public void CounterDiamond() {
-		this.setCountDiamond(this.getCountDiamond() - 1);
-	}
-	
-	/**
 	 * Change the value of alive.
 	 * @param alive
 	 */
 	public void Die(boolean alive) {
 		this.setAlive(false);
 	}
-
-	/**
-	 * @return the countDiamond
-	 */
-	public int getCountDiamond() {
-		return countDiamond;
-	}
-
-	/**
-	 * @param countDiamond the countDiamond to set
-	 */
-	public void setCountDiamond(int countDiamond) {
-		this.countDiamond = countDiamond;
-	}
-
+	
 	/**
 	 * @return the alive
 	 */
@@ -170,7 +145,7 @@ public class Player extends Mobile {
 	
 	
 	/**
-	 * Method.
+	 * Method to associate a picture to Left.
 	 */
 	public Image Left() {
 		try {
@@ -183,7 +158,7 @@ public class Player extends Mobile {
 	}
 
 	/**
-	 * Method.
+	 * Method to associate a picture to Right.
 	 */
 	public Image Right() {
 		try {
@@ -197,7 +172,7 @@ public class Player extends Mobile {
 	
 	
 	/**
-	 * Method.
+	 * Method to associate a picture to Up.
 	 */
 	public Image Up() {
         try {
@@ -210,7 +185,7 @@ public class Player extends Mobile {
 	}
 	
 	/**
-	 * Method.
+	 * Method  to associate a picture to Down.
 	 */
 	public Image Down() {
         try {

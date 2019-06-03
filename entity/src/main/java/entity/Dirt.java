@@ -57,7 +57,7 @@ public class Dirt extends Static {
 	}
 	
 	/**
-	 * Method.
+	 * Method to associate a picture to Dirt.
 	 */
 	public Image DirtPicture() {
         try {

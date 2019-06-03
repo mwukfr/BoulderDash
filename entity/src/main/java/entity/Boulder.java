@@ -62,7 +62,7 @@ public class Boulder extends Mobile {
 	}
 	
 	/**
-	 * Method.
+	 * Method to associate a picture to boulder.
 	 */
 	public Image BoulderPicture() {
         try {
