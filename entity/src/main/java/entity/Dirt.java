@@ -28,7 +28,7 @@ public class Dirt extends Static {
 	/**
 	 * Variables.
 	 */
-	protected static boolean isCollectable = true;
+	protected static boolean isCollectable;
 	
 	/**
 	 * Variable.
@@ -66,6 +66,6 @@ public class Dirt extends Static {
         catch(IOException exc) {
             exc.printStackTrace();
         }
-		return dirtPicture;
+		return this.dirtPicture;
 	}
 }

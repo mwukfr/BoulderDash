@@ -14,7 +14,7 @@ import javax.imageio.ImageIO;
 public class Wall extends Static {
 	
 	
-	private static Image wallPicture;
+	private Image wallPicture;
 
 	/**
 	 * Variables false by default.
@@ -46,15 +46,15 @@ public class Wall extends Static {
 	/**
 	 * @return the wallPicture
 	 */
-	public static Image getWallPicture() {
+	public Image getWallPicture() {
 		return wallPicture;
 	}
 
 	/**
 	 * @param wallPicture the wallPicture to set
 	 */
-	public static void setWallPicture(Image wallPicture) {
-		Wall.wallPicture = wallPicture;
+	public void setWallPicture(Image wallPicture) {
+		this.wallPicture = wallPicture;
 	}
 	
 	/**
@@ -67,6 +67,6 @@ public class Wall extends Static {
         catch(IOException exc) {
             exc.printStackTrace();
         }
-		return wallPicture;
+		return this.wallPicture;
 	}
 }

@@ -179,7 +179,7 @@ public class Player extends Mobile {
 		catch(IOException exc) {
 			exc.printStackTrace();
 		}
-		return left;
+		return this.left;
 	}
 
 	/**
@@ -192,7 +192,7 @@ public class Player extends Mobile {
 		catch(IOException exc) {
 			exc.printStackTrace();
 		}
-		return right;
+		return this.right;
 	}
 	
 	
@@ -206,7 +206,7 @@ public class Player extends Mobile {
         catch(IOException exc) {
             exc.printStackTrace();
         }
-		return up;
+		return this.up;
 	}
 	
 	/**
@@ -219,7 +219,7 @@ public class Player extends Mobile {
         catch(IOException exc) {
             exc.printStackTrace();
         }
-		return down;
+		return this.down;
 	}
 
 }

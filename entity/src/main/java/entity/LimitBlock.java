@@ -55,7 +55,7 @@ public class LimitBlock extends Static {
         catch(IOException exc) {
             exc.printStackTrace();
         }
-		return limitBlockPicture;
+		return this.limitBlockPicture;
 	}
 
 	/**

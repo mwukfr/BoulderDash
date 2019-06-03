@@ -71,7 +71,7 @@ public class Boulder extends Mobile {
         catch(IOException exc) {
             exc.printStackTrace();
         }
-		return boulderPicture;
+		return this.boulderPicture;
 	}
 	
 }

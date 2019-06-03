@@ -9,8 +9,8 @@ public class Static extends Entity {
 	/**
 	 * Variables isMobile is false for all subclass.
 	 */
-	private boolean isMobile = false;
-	
+	protected boolean isMobile = false;
+
 	/**
 	 * Constructor.
 	 */
