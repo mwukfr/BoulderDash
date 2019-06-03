@@ -3,6 +3,8 @@ import java.util.*;
 import entity.*;
 import java.sql.*;
 
+
+
 public class DAOMap {
 	
 	//private int level = ;
@@ -45,8 +47,11 @@ public class DAOMap {
 		this.Y = Y;
 	}
 	
+	public String helloworld;
+	
 	/**
-     * Creates the map.
+     * getLevel we get the character that we put on the database.
+     * Then we will use the procedure in order to search the level
      */
 
 	public void getLevel() {
@@ -54,22 +59,24 @@ public class DAOMap {
 		final String sql = "{call LevelOne}";
 		final CallableStatement call = this.getConnection().prepareCall(sql);
 		call.execute();
-		System.out.println("Maxim si tu lis ça c'est que tout marche à peu près");
-		final ResultSet resultSet = call.getResultSet();
-		if (resultSet.first()) {
-			helloWorld = new HelloWorld(resultSet.getInt("id"), code, resultSet.getString("message"));
-		}
-		return helloWorld;
+		//System.out.println("Maxim si tu lis ça c'est que tout marche à peu près");
+		//if (resultSet.first()) {
+			//helloWorld = new HelloWorld(resultSet.getInt("id"), code, resultSet.getString("message"));
+			//final ResultSet resultSet = call.getResultSet();
+	//}
+		//return null;
 	} catch (final SQLException e) {
 		e.printStackTrace();
 	}
 	}
-	
+	/**
+	 * mapImag will show the map to the user  by transforming the character into an object of the game.
+	 */
 	  public static ArrayList<Objects> mapImage(){
 	  
-	  ArrayList<Objet> tabObjet=new ArrayList<Objet>();
-	  	for(int X=0;X<24;X++) {
-	  	System.out.println(level.getMap()[X][Y]);
+	  System.out.print(getLevel());
+	  ArrayList<Entity> tabObjet=new ArrayList<Entity>();
+	  	for(int X=0;X<24;X++) {[X][Y]};
 	 	switch(level.getMap()[X][Y]){
 	 
 	 	case("t"):
@@ -105,7 +112,6 @@ public class DAOMap {
 		break;
 		}
 		}
-		System.out.println("\n");
+			System.out.println("\n");
 		}
-		
-}
+	
