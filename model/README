@@ -1,0 +1,1 @@
+La partie BoulderDashModel et Model servent à compiler les différentes méthodes qui vont être utilisés dans la GameLoop, la DAOMAp permet de créer la map, tandis que DBProperties et DBConnection s'occupe de la connexion avec la database.
